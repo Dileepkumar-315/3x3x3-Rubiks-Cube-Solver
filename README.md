@@ -13,9 +13,8 @@ The image processing took around a month to get working and can be improved for 
 
 ## How to install OpenCV in Eclipse
 
-1. Navigate to [OpenCV](https://sourceforge.net/projects/opencvlibrary/)
-2. Click download 
-3. Extract it  
+
+1. Extract it  
   If **Linux**:  
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Navigate in Terminal to where you extacted it and run this `$ mkdir build && cd build && cmake .. && make`  
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This will build OpenCV so that you can use it. This will take a while... 10-20 minutes to complete building   
@@ -29,13 +28,13 @@ The image processing took around a month to get working and can be improved for 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Once complete you should end up with a **build** folder   
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; You can now move to step 4.  
 
-4. Run Eclipse  
+2. Run Eclipse  
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Look for **Windows** in the toolbar on the top of Eclipse then choose **Preferences**   
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Scroll down to **Java** then click **User Libraries**  
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; As shown. NOTE you shouldn't see *opencv-3.3.0* We are going to make that. Also *JavaCV* is irrelevant.  
    ![here](https://github.com/HaginCodes/3x3x3-Rubiks-Cube-Solver/blob/master/images%20for%20readMe/preferences.png?raw=true)  
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Then press **New** and name it *OpenCV-3.3.0* or something like that.   
-5. Add OpenCV jar to User Library  
+3. Add OpenCV jar to User Library  
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; After pressing **New** make sure you have the library you created selected.  
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Then press **Add External Jars**  
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Then navigate into your OpenCV folder to the `build/bin/` folder.  
@@ -43,7 +42,7 @@ The image processing took around a month to get working and can be improved for 
     
     It your library should look like ![this](https://github.com/HaginCodes/3x3x3-Rubiks-Cube-Solver/blob/master/images%20for%20readMe/Jar%20Selection.png?raw=true "added user library")
     
-6. Add Native Library Location  
+4. Add Native Library Location  
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Now we have to add the native OpenCV libraries to our OpenCV library.  
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Click on Native Libary location and the libaries are located it in your dowloaded OpenCV folder in `/build/lib`   
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Congrats you now have OpenCV configured and ready!  
@@ -89,7 +88,6 @@ When you scan the cube you follow this order.
 **TOP, LEFT, FRONT, RIGHT, BACK BOTTOM**   
 Here is a sample video showing how it should be done.  
 
-[![Youtube video](https://github.com/HaginCodes/3x3x3-Rubiks-Cube-Solver/blob/master/images%20for%20readMe/thumbnail.png?raw=true)](https://youtu.be/afAGtExoiLQ "Click to watch video!" )
 
 If you follow the video and track how I move the cube to take photos of it in the video exactly you will get a solution to your cube.
 If you get a successful solution you will see this printed in the console:  
