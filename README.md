@@ -141,8 +141,6 @@ The front side is:
 And so on. 
 
 Here is an image showing the correct orientation.  
-![cube image example](https://github.com/HaginCodes/3x3x3-Rubiks-Cube-Solver/blob/master/images%20for%20readMe/explain%20sides.jpg?raw=true)  
-
 It matches the cube printed in the console
 
          OYG
